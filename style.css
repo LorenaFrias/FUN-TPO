@@ -1,0 +1,46 @@
+:root {
+    --rojo: #f3533a ;
+    --azul: #4aaca7;
+    --naranja: #fa9f42;
+    --verde: #bad879;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+
+
+h1,
+h2,
+h3,
+label {
+    font-family: 'Amatic SC', sans-serif;
+}
+
+a,
+p {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
