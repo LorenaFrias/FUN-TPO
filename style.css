@@ -32,6 +32,7 @@ p {
 
 a {
     text-decoration: none;
+    color: #fff;
 }
 
 li {
@@ -43,4 +44,41 @@ li {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #f3533a;
+    text-align: center;
+    padding: 3rem;
+    margin-top: 3rem;
+}
+
+.footer-logo {
+    width: 100px;
+    display: inline-block;
+}
+
+.footer-nav {
+    margin-top: 2em;
+}
+
+.footer-nav li {
+    margin-top: 1em;
+}
+
+.footer-nav li a {
+    font-size: 1.25rem;
+}
+
+.sociales {
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+.sociales-flex {
+    display: flex;
+    justify-content: space-around;
 }
