@@ -18,39 +18,75 @@
 </head>
 <body>
 
-    <header></header>
+  <header></header>
 
-    <main></main>
+  <main>
 
-    <footer>
-        
-        <section class="container">
-            <div class="footer-logo">
-              <img src="./assets/icons8-rocket-64.png" alt="Fun-TPO logo">
+    <section class="container contacto" id="contacto">
+      
+      <h2>hablemos</h2>
+      <p>este formulario está validado por javascript así que a llenar cada campo para que no se altere.</p>
+  
+      <div class="grid contact-container">
+        <div class="contact-1"></div>
+        <div class="contact-2"></div>
+
+        <div class="contact">
+          
+          <form name="form-contact" method="POST" data-netlify="true" id="formulario">
+            <p class="error"></p>
+            <div class="control">
+              <label for="nombre">nombre</label>
+              <input type="text" name="nombre" id="nombre" autocomplete="name">
             </div>
-            
-            <ul class=" footer-nav">
-              <li><a href="#home">inicio</a></li>
-              <li><a href="#api">api</a></li>
-              <li><a href="#iframe">iframe</a></li>
-              <li><a href="#grid">grid</a></li>
-              <li><a href="#contacto">contacto</a></li>
-              <li><a href="#animación">animación</a></li>
-            </ul>
-            
-            <div class="sociales sociales-flex">
-              <a href="https://es-la.facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
-              <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
-              <a href="https://twitter.com"><i class="fa-brands fa-square-twitter"></i></a>
-              <a href="https://github.com/LorenaFrias"><i class="fa-brands fa-github"></i></a>
+            <div class="control">
+              <label for="email">email</label>
+              <input type="text" name="email" id="email" autocomplete="email">
+                           
             </div>
-            <a target="_blank" href="https://icons8.com/icon/xdfDHXdrw6x9/rocket">Rocket</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-
-          </section>
-         
-    </footer>
+            <div class="control">
+              <label for="message"></label>
+              <textarea name="message" id="message"  placeholder="Dejanos tu mensaje o pregunta." cols="30" rows="10"></textarea>                
+              
+            </div>
+            <input type="submit" value="enviar" id="submit-btn">
     
+          </form>
+        </div>
+      </div>
 
-    <script src="main.js"></script>
+    </section>
+  </main>
+
+  <footer>
+      
+      <section class="container">
+          <div class="footer-logo">
+            <img src="./assets/icons8-rocket-64.png" alt="Fun-TPO logo">
+          </div>
+          
+          <ul class=" footer-nav">
+            <li><a href="#home">inicio</a></li>
+            <li><a href="#api">api</a></li>
+            <li><a href="#iframe">iframe</a></li>
+            <li><a href="#grid">grid</a></li>
+            <li><a href="#contacto">contacto</a></li>
+            <li><a href="#animación">animación</a></li>
+          </ul>
+          
+          <div class="sociales sociales-flex">
+            <a href="https://es-la.facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com"><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="https://github.com/LorenaFrias"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <a target="_blank" href="https://icons8.com/icon/xdfDHXdrw6x9/rocket">Rocket</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+        </section>
+        
+  </footer>
+  
+
+  <script src="main.js"></script>
 </body>
 </html>
