@@ -46,6 +46,31 @@ li {
     margin: 0 auto;
 }
 
+
+/* IFRAME */
+
+.iframe-text {
+    text-align: center;
+    padding: .8em;
+    
+}
+
+.iframe-text h2 {
+    font-size: 4rem;
+    margin-bottom: .5em;
+}
+
+.iframe-text p {
+     font-size: 1.1rem;
+     margin-bottom: 1rem;
+}
+.video {
+    aspect-ratio: 16/9;
+    width: 100%;
+}
+
+
+
 /* CONTACTO */
 
 .contacto {
