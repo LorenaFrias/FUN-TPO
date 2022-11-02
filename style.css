@@ -27,6 +27,10 @@ label {
     font-family: 'Amatic SC', sans-serif;
 }
 
+h2 {
+    font-size: 4rem;
+}
+
 a,
 p {
     font-family: 'Josefin Sans', sans-serif;
@@ -123,6 +127,24 @@ li {
 
 /* API */
 
+
+.api-text h2 {
+    margin-bottom: 1rem;
+    padding: 0 1.2em;
+    text-align: center;
+}
+.api-text p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 0 1em;
+}
+
+.api-text a {
+    color: var(--rojo);
+}
+
 .api-container ul {
     margin-top: 5em;
 }
@@ -170,6 +192,22 @@ blockquote {
 .api-imagenes-texto p {
     margin-top: .5rem;
 
+}
+
+/* FULL-BLEED */
+
+.division {
+    background-color: #5acfc9;
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+    padding: 3rem 0;
+    margin: 3em 0;
+}
+
+.full-bleed {
+    box-shadow: 0 0 0 100vmax #5acfc9;
+    clip-path: inset(0 -100vmax);
 }
 
 /* IFRAME */
