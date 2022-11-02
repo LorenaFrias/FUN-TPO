@@ -124,6 +124,79 @@ li {
     box-shadow: 3px 2px 22px 1px rgba (0, 0, 0, 0.24);
 }
 
+/* ANIMATIONS */
+
+.animaciones h2 {
+    text-align: center;
+}
+   
+.animaciones p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 0 1em;
+    margin-top: 2em;
+}
+
+.square {
+    display: grid;
+    grid-template-rows: 2fr;
+    gap: 20px;
+    margin: 2em 3em;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+
+    animation: opaque 5s 5s ease-in-out;
+
+    /* animation observer */
+    transform: translateX(50px);
+    opacity: 0;
+    transition: 1500ms;
+}
+
+.square.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.square img {
+    margin: 0 auto;
+    padding: 2em;
+    width: 250px;
+
+    transition: 800ms ease-in-out;
+}
+
+
+.sq-1 img:hover {transform: rotate(360deg);}
+
+.sq-2 img:hover {transform: translate(-70px, 30%);}
+
+.sq-3 img:hover {transform: scale(1.5)}
+
+.sq-4 img:hover {rotate: 1 1 1 360deg;}
+
+
+.animacion-texto {
+    text-align: center;
+    margin: 1em 0;
+    border-top: 1px solid lightgray;
+    padding-top: 2rem;
+}
+
+.animacion-texto p {
+    font-size: 1.2rem;
+}
+
+
+@keyframes opaque {
+    0%    { opacity: 1; }
+    20%   { opacity: 0; }
+    60%   { opacity: 1; }
+    
+}   
+
 
 /* API */
 
