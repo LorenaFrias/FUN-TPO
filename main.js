@@ -33,6 +33,50 @@ function countClicks(){
 }
 
 
+
+// API REST
+
+function getData(){
+    fetch('https://randomuser.me/api/?results=3&nat=es')
+    .then(res => res.json())
+    .then(data => {
+        let author = data.results;
+        let output = '';
+        author.forEach(function(lists) {
+            output +=
+            `
+            <li>
+                <img id="image" src="${lists.picture.large}" alt="foto aleatoria">
+                <div class="api-imagenes-texto">
+                    <blockquote>"${getRandomReview()}"</blockquote>
+                    <p id="name">${lists.name.first}</p>
+                </div>
+
+            </li>
+            
+            `
+        });
+        document.getElementById('api-container').innerHTML = output;
+    })
+    }
+    
+    getData();
+    
+    let reviews = [
+        '¡Excelente!',
+        '¡Codo a Codo es lo más!',
+        '¡Aprendí un montón!',
+        '¡Gracias por la dedicación!',
+        '¡Germán es el mejor profe!',
+        '¡Gracias profe!'
+    ]
+    
+    function getRandomReview () {
+        let review = reviews[Math.floor(Math.random() * reviews.length)];
+        return review
+    }
+
+
 // VALIDACION FORMULARIO
 
 const form = document.querySelector('#formulario')
