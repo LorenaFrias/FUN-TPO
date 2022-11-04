@@ -54,6 +54,67 @@ li {
     margin: 0 auto;
 }
 
+
+/* HERO */
+
+.hero {
+    margin: 10rem 0;
+    background-image: url(./assets/circle-scatter-haikei.svg);
+}
+.hero-text {
+    background-color: var(--amarillo);
+    padding: 2em;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 6rem;
+}
+
+.hero-text h3 {
+    font-size: 3rem;
+}
+
+.hero-text p {
+    margin: 1rem 0;
+    line-height: 40px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.hero-cta {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+.hero-cta:hover,
+.hero-cta:active {
+    background-color: #fff;
+    color: #333;
+}
+
+.hero-img {
+    margin: 1em 0;
+    background-image: url(./assets/rainbow.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    background-size: cover;
+    background-position: right;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+
+
 /* CARDS */
 
 .cards {
@@ -500,6 +561,17 @@ footer {
 /* Media Query for Tablets Ipads portrait mode */
 @media (min-width: 768px) and (max-width: 1024px){
 
+    
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero-img {
+        padding: 2rem;
+        font-size: 5rem
+    }
+
     .cards-container {
         display: flex;
         flex-wrap: wrap;
@@ -543,6 +615,16 @@ footer {
 
 /* Media Query for Laptops and Desktops */
 @media (min-width: 1025px) {
+
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero-img {
+        padding: 2rem;
+        font-size: 5rem
+    }
 
     .cards-container {
         display: flex;
