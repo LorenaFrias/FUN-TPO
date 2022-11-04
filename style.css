@@ -55,6 +55,88 @@ li {
     margin: 0 auto;
 }
 
+/* NAVIGATION */
+
+.logo {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 2rem;
+    color: var(--rojo);
+    /* background-color: #f3533a; */
+    font-weight: 700;
+    animation: jump 4s 1.5s ease-in-out forwards;
+}
+
+nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: white;
+    height: 70vh;
+    width: 100%;
+    z-index: 999;
+    text-transform: uppercase;
+    transform: translateX(100%);
+    transition: transform .5s ease-in-out;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 8em;
+}
+
+.links {
+    color: black;
+    padding: .75em 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    
+}
+
+.links:hover {
+    background-color: #4aaca7;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.close {
+    float: right;
+    margin: 2em;
+    width: 2.5em;
+    cursor: pointer;
+}
+
+header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 2rem;
+    background-image: url(./assets/circle-scatter-haikei.svg);
+    background-position: center;
+    background-size: contain;
+
+}
+
+header svg {
+    width: 3em;
+    margin-top: -.6em;
+    cursor: pointer;
+}
+
+.open-nav {
+    transform: translateX(0%);
+}
+
+@keyframes jump {
+  
+    50% {
+        opacity: 0;
+        transform: scale(0.7) translateY(10px);
+    }
+}
+
 
 /* HERO */
 
@@ -66,6 +148,13 @@ li {
     background-color: var(--amarillo);
     padding: 2em;
     text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    animation: heromove 3s cubic-bezier(.44, .05, 0, .98) 0s ;
+}
+
+@keyframes heromove {
+    0% {    clip-path: polygon(0 0, 0% 0, 0 100%, 0 100%);
+    }
 }
 
 .hero-text h1 {
@@ -330,7 +419,7 @@ li {
     width: 40%;
     background-color: #333;
     border-radius: 50%;
-    border: none;
+    border: 5px inset var(--azul);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -575,6 +664,7 @@ footer {
 /*Media Query for low resolution  Tablets, Ipads */
 
 @media screen and (min-width: 481px) and (max-width: 767px) {
+    
 
     .opiniones-container li {
         flex-direction: row;
@@ -648,6 +738,37 @@ footer {
 
 /* Media Query for Laptops and Desktops */
 @media (min-width: 1025px) {
+
+    .menu,
+    .close {
+        display: none;
+    }
+
+    nav {
+        transform: translateX(0);
+        position: unset;
+        display: block;
+        width: auto;
+        height: auto;
+        background: none;
+      
+    }
+
+    ul {
+        display: flex;
+        margin: 0;
+    }
+
+    ul a {
+        color: white;
+        padding: .5em 1.5em;
+        font-size: 0.9rem;
+    }
+
+    ul a:hover {
+        background: none;
+    }
+
 
     .hero {
         display: grid;
