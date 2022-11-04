@@ -36,6 +36,8 @@ p {
     font-family: 'Josefin Sans', sans-serif;
 }
 
+p {font-size: 1.2rem;}
+
 a {
     text-decoration: none;
     color: #fff;
@@ -126,12 +128,16 @@ li {
 
 /* ANIMATIONS */
 
+.animaciones {
+    margin: 10rem 0;
+}
+
 .animaciones h2 {
     text-align: center;
 }
    
 .animaciones p {
-    font-size: 1.1rem;
+    
     line-height: 1.5;
     letter-spacing: 1px;
     text-align: center;
@@ -207,7 +213,7 @@ li {
     text-align: center;
 }
 .api-text p {
-    font-size: 1.1rem;
+    
     line-height: 1.5;
     letter-spacing: 1px;
     text-align: center;
@@ -230,6 +236,7 @@ li {
 
 .opiniones-container li {
     display: flex;
+    flex-direction: column;
     margin-top: 1.5em;
     
 
@@ -240,12 +247,12 @@ li {
     align-self: center;
 }
 
-.opiniones-container li:nth-child(2) {
+/* .opiniones-container li:nth-child(2) {
     flex-direction: row-reverse;
-}
+} */
 
 .opiniones-container img {
-    width: 50%;
+    width: 40%;
     background-color: #333;
     border-radius: 50%;
     border: none;
@@ -301,12 +308,13 @@ blockquote {
 }
 
 .iframe-text p {
-     font-size: 1.1rem;
+     
      margin-bottom: 1rem;
 }
 .video {
     aspect-ratio: 16/9;
     width: 100%;
+    padding: 1em;
 }
 
 
@@ -323,7 +331,7 @@ blockquote {
 }
 
 .contacto p {
-    font-size: 1.1rem;
+    
     text-align: center;
     margin: 1.5rem 0;
     padding: 1em;
@@ -462,5 +470,123 @@ footer {
 
 .sociales-flex {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+
+/* MEDIA QUERIES */
+
+/*Media Query for low resolution  Tablets, Ipads */
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+
+    .opiniones-container li {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .opiniones-container img {
+        width: 200px;
+    }
+
+    .opiniones-container li:nth-child(2) {
+        flex-direction: row-reverse;
+    } 
+
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+
+    .cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 60px;
+    }
+
+    .card {
+        flex: 0 0 calc(380px - 68px)
+    }
+
+    .animacion-flex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .opiniones-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .opiniones-container li {
+        flex-direction: column;
+    }
+
+    .opiniones-container img {
+        width: 200px;
+    }
+
+    .footer-nav {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+
+
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) {
+
+    .cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 60px;
+    }
+
+    .card {
+        flex: 0 0 calc(380px - 68px)
+    }
+
+    
+    .animacion-flex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .opiniones-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .opiniones-container li {
+        flex-direction: column;
+    }
+
+    .opiniones-container img {
+        width: 200px;
+    }
+
+    .footer-nav {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .iframe-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 0 2rem;
+    }
+
+
 }
