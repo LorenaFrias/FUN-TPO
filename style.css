@@ -59,7 +59,7 @@ li {
 /* HERO */
 
 .hero {
-    margin: 10rem 0;
+    margin-bottom: 10rem;
     background-image: url(./assets/circle-scatter-haikei.svg);
 }
 .hero-text {
