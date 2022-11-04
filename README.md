@@ -1,5 +1,5 @@
 
-# TPO-TIENDA CODO A CODO
+# FUN-TPO CODO A CODO
 
 ## Autora
 
