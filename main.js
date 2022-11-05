@@ -91,6 +91,9 @@ function getData(){
     
     getData();
     
+    const confettiBtn = document.querySelector('.confetti');
+    confettiBtn.addEventListener('click', getData);
+    
     let reviews = [
         '¡Excelente!',
         '¡Codo a Codo es lo más!',

@@ -438,6 +438,39 @@ blockquote {
 
 }
 
+
+/* CONFETTI BTN */
+
+.confetti {
+    cursor: pointer;
+    display: block;
+    padding: 1.1rem;
+    margin: 3rem auto;
+    color: #fff;
+
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(90deg, var(--naranja), var(--amarillo));
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    transition: all ease-in-out 200ms;
+}
+
+.confetti:hover {
+    border: none;
+    transform: scale(1.1);
+    box-shadow: 0 .7em 1em -.5em rgba(0, 0, 0, .25), 0 1em 3em -4em, 0 1em 4em -5em;
+}
+
+.confetti:active {
+    border: none;
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+
+}
+
+
+
 /* FULL-BLEED */
 
 .division {

@@ -159,6 +159,9 @@
         </ul>
 
       </div>
+
+      <button type="button" class="confetti container" id="confetti"><i class="fa-solid fa-plus"></i></button>
+
     </section>
 
     <section class="container division full-bleed">
@@ -255,5 +258,26 @@
   
 
   <script src="main.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+  <script>
+    const jsConfetti = new JSConfetti();
+    document.querySelector(".confetti").addEventListener("click", async () => {
+      await jsConfetti.addConfetti({
+        confettiRadius: 6,
+        confettiNumber: 500,
+        confettiColors: [
+          "#ff0a54",
+          "#ff477e",
+          "#f1c40f",
+          "#ff85a1",
+          "#f3533a",
+          "#fa9f42",
+
+        ],
+      });
+      
+    });
+  </script>
 </body>
 </html>
